@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/survey-css.css">
+	<title>Faith's Survey Form</title>
+</head>
+<body>
+	<h1 id="title">Faith's Survey Form</h1>
+	<p id="description">Fill details below to complete the survey</p>
+	<form id="survey-form" action="/faithf.quiman04@gmail.com">
+		<label for="name" id="name-label">Name</label>
+			<input class="input" id="name" type="text" name="name"placeholder="Faith Francis L. Quiman" required></input>
+			&nbsp;<br>
+		<label for="email" id="email-label"> Email </label>
+			<input class="input" id="email" type="email" name="email" placeholder="faithfrancisquiman@gmail.com" required></input>
+			&nbsp;<br>
+		<div class="division">
+			<label for="number" id="number-label">Age</label><br>
+				<input class="input" id="number" type="number" name="number" placeholder="21" min="18" max="59" required> </input><br>
+				<p class="caption">Age required: 18 - 59</p>
+		</div>
+		<div id="right" class="division">
+			<label for="dropdown" id="sex">Sex</label>
+				<select id="dropdown">
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+				</select>
+		</div>&nbsp;<br>
+		<hr>
+		<div>
+			<p style="text-align: left;">
+				Would you recommend Faith's Services and Expertise to a friend?
+			</p>
+			<input type="radio" id="definitely" name="recommend" value="definitely">
+				<label for="definitely"checked>Definitely</label><br>
+			<input type="radio" id="maybe" name="recommend" value="maybe">
+				<label for="maybe">Maybe</label><br>
+			<input type="radio" id="not-sure" name="recommend" value="not-sure">
+				<label for="not-sure">Not Sure</label><br>
+			<input type="radio" id="definitely-not" name="recommend" value="definitely-not">
+				<label for="definitely-not">Definitely Not</label>&nbsp;<br>
+				&nbsp;<br>
+		</div>
+		<div>
+			<p style="text-align: left;">Among of Faith's skills, where do you think he is not good at it? <em class="caption">(Check all that apply)</em></p>
+			<label for="graphic-design">
+				<input id="graphic-design" type="checkbox" name="skills" value="graphic-design">Graphic Design
+			</label><br>
+			<label for="photo-editing">
+				<input id="photo-editing" type="checkbox" name="skills" value="photo-editing">Photo Editing<em>(Photoshop)</em>
+			</label><br>
+			<label for="video-editing">
+				<input id="video-editing" type="checkbox" name="skills" value="video-editing">Video Editing
+			</label><br>
+			<label for="technical-drafting">
+				<input id="technical-drafting" type="checkbox" name="skills" value="technical-drafting">Technical Drafting
+			</label><br>
+			<label for="computer-hardware-troubleshooting">
+				<input id="computer-hardware-troubleshooting" type="checkbox" name="skills" value="computer-hardware-troubleshooting">Computer Hardware Troubleshooting
+			</label><br>
+			<label for="computer-software-troubleshooting">
+				<input id="computer-software-troubleshooting" type="checkbox" name="skills" value="computer-software-troubleshooting">Computer Software Troubleshooting
+			</label><br>
+			<label for="responsive-web-design">
+				<input id="responsive-web-design" type="checkbox" name="skills" value="responsive-web-design">Responsive Web Design
+			</label>
+		</div>
+		&nbsp;<br>
+		<p style="text-align: left;">
+			Pleas add your messages sugestion or any feedbacks to <b>Faith Francis Quiman</b>
+		</p>
+		<label for="textarea">
+			<textarea id="textarea"  name="textarea" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."></textarea>
+		</label>
+		<button id="Submit" type="submit">Submit</button>
+	</form>
+
+</body>
+</html>
